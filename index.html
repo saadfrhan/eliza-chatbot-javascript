@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eliza Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+      <div class="center-content">
+        <p>WELCOME TO</p>
+        <pre id="eliza">
+EEEEEEE  LL      IIII  ZZZZZZZ   AAAAA 
+EE       LL       II       ZZ   AA   AA
+EEEEEEE  LL       II     ZZZ    AAAAAAA
+EE       LL       II    ZZ      AA   AA
+EEEEEEE  LLLLLL  IIII  ZZZZZZZ  AA   AA
+        </pre>
+      </div>
+    </div>
+    <div id="chatbox">
+      <p style="margin-bottom: 10px;">ELIZA:</p>
+    </div>
+    <div id="user-input-container" style="display: none;">
+      <p>YOU:&nbsp;</p>
+      <textarea
+        id="user-input"
+        oninput="appendSymbol()"
+        onfocus="appendSymbol()"
+      ></textarea>
+    </div>
+
+    <script src="eliza.js"></script>
+  </body>
+</html>
