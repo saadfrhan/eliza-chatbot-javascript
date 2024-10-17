@@ -44,6 +44,40 @@ const responses = [
     pattern: /you (.*)/i,
     response: "Let's focus on your thoughts and feelings.",
   },
+  { pattern: /i want (.*)/i, response: "What steps do you think you can take to achieve $1?" },
+  { pattern: /i feel (.*) about (.*)/i, response: "What is it about $2 that makes you feel $1?" },
+  {
+    pattern: /what should i do/i,
+    response: "What options do you believe you have?",
+  },
+  {
+    pattern: /i don't know/i,
+    response: "It's okay to feel uncertain. What are you feeling unsure about?",
+  },
+  {
+    pattern: /tell me more/i,
+    response: "Sure! What specific part would you like to elaborate on?",
+  },
+  {
+    pattern: /my (.*)/i,
+    response: "How does your $1 affect your feelings?",
+  },
+  {
+    pattern: /i feel like (.*)/i,
+    response: "What makes you feel that way?",
+  },
+  {
+    pattern: /what do you mean/i,
+    response: "Can you clarify what you’re asking about?",
+  },
+  {
+    pattern: /i hope/i,
+    response: "What gives you hope in this situation?",
+  },
+  {
+    pattern: /i fear/i,
+    response: "What is it that you are afraid of?",
+  },
   { pattern: /.*/, response: "Please, tell me more about that." },
 ];
 
